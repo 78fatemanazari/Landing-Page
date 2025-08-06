@@ -511,9 +511,10 @@ a{
   }
 
   .about-image-tag {
-    padding: 7px;
-    right: 7px;
-    bottom: -64px;
+    padding: 3px;
+        right: -8px;
+        bottom: -64px;
+        z-index: 9999;
   }
 
   .about-text{
