@@ -9,6 +9,13 @@
   <body>
     <!-- Start of Header -->
     <header class="container header">
+      <div onclick="handleMenu()" class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="background"></div>
+      <div id="cursor"></div>
       <nav class="nav">
         <div class="nav-left">
           <img src="./statics/images/logo.png" alt="logo image" />
@@ -16,7 +23,7 @@
         </div>
         <div class="nav-right">
           <ul>
-            <li>
+            <li class="menu-item">
               <span>Home</span>
               <div class="nav-submenu">
                 <div class="sub-menu-inner">
@@ -29,7 +36,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="menu-item">
               <span>Services</span>
               <div class="nav-submenu">
                 <div class="sub-menu-inner">
@@ -42,7 +49,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="menu-item">
               <span>Technologies</span>
               <div class="nav-submenu">
                 <div class="sub-menu-inner">
@@ -55,7 +62,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="menu-item">
               <span>Portfolio</span>
               <div class="nav-submenu">
                 <div class="sub-menu-inner">
@@ -68,7 +75,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="menu-item">
               <span>About</span>
               <div class="nav-submenu">
                 <div class="sub-menu-inner">
@@ -101,7 +108,19 @@
               maiores rerum ex quidem porro cumque repudiandae dicta eligendi
               nesciunt minima ratione! Adipisci, suscipit perferendis.
             </p>
-            <button>More Info</button>
+            <button class="btn-info" onclick="handleModal()">More Info</button>
+            <div id="modal" class="btn-modal">
+              <div onclick="handleModal()" class="btn-modal-bg"></div>
+              <div class="btn-modal-container">
+                <p>Fatema Web</p>
+                <p>Explore More</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem velit praesentium et similique! Eius qui ipsa debitis est impedit iure.</p>
+                <div class="modal-btn">
+                  <button class="btn-ok">Done</button>
+                  <button onclick="handleModal()" class="btn-cancle">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,55 +128,7 @@
     <!-- End of Hero Section -->
     <!-- start of services section -->
     <section class="container">
-      <div class="services">
-        <div class="services-item">
-          <div class="services-item-line"></div>
-          <div class="services-item-left">
-            <div class="services-item-left-icon">
-              <svg>
-                <use href="./statics/icons/web.svg#web"></use>
-              </svg>
-            </div>
-            <span>01</span>
-          </div>
-          <div class="services-item-right">
-            <span>Services Items</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, tempora? Est, tempora?</p>
-          </div>
-        </div>
-        <div class="services-item">
-          <div class="services-item-line"></div>
-          <div class="services-item-left">
-            <div class="services-item-left-icon">
-              <svg>
-                <use href="./statics/icons/web.svg#web"></use>
-              </svg>
-            </div>
-            <span>02</span>
-          </div>
-          <div class="services-item-right">
-            <span>Services Items</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, tempora? Est, tempora?</p>
-          </div>
-        </div>
-        <div class="services-item">
-          <div class="services-item-line"></div>
-          <div class="services-item-left">
-            <div class="services-item-left-icon">
-              <svg>
-                <use href="./statics/icons/web.svg#web"></use>
-              </svg>
-            </div>
-            <span>03</span>
-          </div>
-          <div class="services-item-right">
-            <span>Services Items</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, tempora? Est, tempora?</p>
-          </div>
-        </div>
+      <div id="servicesContainer" class="services">
       </div>
     </section>
 
@@ -501,6 +472,7 @@
         </div>
        </footer>
       <!-- End of Footer-->
+       <script src="script.js"></script>
      
   </body>
 </html>
