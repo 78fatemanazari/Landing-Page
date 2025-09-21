@@ -1267,7 +1267,7 @@ a{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      position: fixed;
+      position: absolute;
       top: 30px;
       right: 30px;
       z-index: 3;
